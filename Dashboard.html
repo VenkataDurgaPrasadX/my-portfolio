@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Stats</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #00bcd4;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 3rem 0 1.5rem;
+            color: #ffeb3b;
+        }
+
+        .chart-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            background: #1e1e1e;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #00bcd4;
+        }
+
+        .stats,
+        .profiles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+            gap: 1.5rem;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            padding: 1.5rem;
+            background: #212121;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #444;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #ffeb3b;
+            font-size: 2rem;
+        }
+
+        .card p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #00bcd4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #ffeb3b;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Tech Progress Dashboard</h1>
+
+    <div class="chart-container">
+        <canvas id="techChart"></canvas>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h2 class="count" data-target="6">0</h2>
+            <p>Technologies Learned</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="480">0</h2>
+            <p>Problems Solved</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="25">0</h2>
+            <p>Mini & Major Projects</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="4">0</h2>
+            <p>Internships</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="1200">0</h2>
+            <p>Total Coding Hours</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="150">0</h2>
+            <p>LeetCode Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="200">0</h2>
+            <p>HackerRank Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="300">0</h2>
+            <p>GFG Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="100">0</h2>
+            <p>Codeforces Problems</p>
+        </div>
+        <!-- Additional Tech Profiles -->
+        <div class="card">
+            <h2 class="count" data-target="85">0</h2>
+            <p>CodeChef Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="70">0</h2>
+            <p>HackerEarth Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="65">0</h2>
+            <p>Codewars Challenges</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="40">0</h2>
+            <p>Spoj Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="30">0</h2>
+            <p>AtCoder Problems</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="2">0</h2>
+            <p>Patents</p>
+        </div>
+        <div class="card">
+            <h2 class="count" data-target="3">0</h2>
+            <p>Research Papers</p>
+        </div>
+    </div>
+    <!-- Tech Profiles Section -->
+    <h2 class="section-title">Tech Profiles</h2>
+    <div class="profiles">
+        <div class="card">
+            <h2>LeetCode</h2>
+            <p>Regularly solve algorithm and data structure problems. Ranked in the top 1000 globally.</p>
+            <a href="https://leetcode.com/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>GeeksforGeeks (GFG)</h2>
+            <p>Contributed solutions to a wide range of problems, specializing in Data Structures and Algorithms.</p>
+            <a href="https://www.geeksforgeeks.org/user/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>HackerRank</h2>
+            <p>Completed challenges in Algorithms, Data Structures, and AI. Achieved a Gold Badge in Problem Solving.
+            </p>
+            <a href="https://www.hackerrank.com/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>CodeChef</h2>
+            <p>Active in competitive programming, with a rating above 1700. Frequently participates in long challenges.
+            </p>
+            <a href="https://www.codechef.com/users/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>Codeforces</h2>
+            <p>Engage in regular contests to improve problem-solving speed and accuracy. Current rating: 1800+.</p>
+            <a href="https://codeforces.com/profile/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>Spoj</h2>
+            <p>Solved over 100 algorithmic problems, including some advanced level ones in a variety of domains.</p>
+            <a href="https://www.spoj.com/users/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>AtCoder</h2>
+            <p>Participate in weekly contests, improving skills in algorithms and computational problem solving.</p>
+            <a href="https://atcoder.jp/users/yourusername" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>ProjectEuler</h2>
+            <p>Solved over 100+ algorithmic challenges. Focus on mathematical and computational problem solving.</p>
+            <a href="https://projecteuler.net/" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>HackerEarth</h2>
+            <p>Participated in challenges and hackathons, ranked top 100 in multiple contests.</p>
+            <a href="https://www.hackerearth.com/challenges/" target="_blank">Visit Profile</a>
+        </div>
+        <div class="card">
+            <h2>Patents</h2>
+            <p>Filed a patent for an innovative algorithm related to AI and machine learning.</p>
+            <a href="https://patents.google.com/patent/YOURPATENTNUMBER" target="_blank">View Patent</a>
+        </div>
+        <div class="card">
+            <h2>Research Papers</h2>
+            <p>Published research papers in international conferences, focusing on machine learning and AI technologies.
+            </p>
+            <a href="https://www.researchgate.net/profile/YourName" target="_blank">View Papers</a>
+        </div>
+    </div>
+
+
+    <script>
+        window.onload = function () {
+            const counters = document.querySelectorAll('.count');
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let current = 0;
+                const increment = target / 100;
+
+                const animateCount = () => {
+                    current += increment;
+                    if (current <= target) {
+                        counter.innerText = Math.floor(current);
+                        requestAnimationFrame(animateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                animateCount();
+            });
+        };
+    </script>
+
+    <script>
+        const ctx = document.getElementById('techChart').getContext('2d');
+        const techChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Java', 'C++', 'HTML', 'CSS', 'JavaScript', 'DSA'],
+                datasets: [
+                    {
+                        label: '2022',
+                        data: [60, 40, 80, 70, 50, 45],
+                        backgroundColor: 'rgba(0, 188, 212, 0.6)',
+                        borderRadius: 10
+                    },
+                    {
+                        label: '2023',
+                        data: [85, 60, 95, 90, 75, 80],
+                        backgroundColor: 'rgba(255, 235, 59, 0.7)',
+                        borderRadius: 10
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: { color: '#fff' }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Skill Growth Over Time',
+                        color: '#00bcd4',
+                        font: { size: 18 }
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#ccc' } },
+                    y: { ticks: { color: '#ccc' }, beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

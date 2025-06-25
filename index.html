@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Durga Prasad, portfolio, Prasad, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description"
+    content="Welcome to Prasad's Portfolio. Full-Stack Web Developer and Android App Developer" />
+  <!-- Custom CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+  <title>Portfolio | Venkata Durga Prasad</title>
+</head>
+
+<body oncontextmenu="return false">
+
+  <!-- Pre-loader -->
+  <div class="loader-container">
+    <div class="loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="loader-text" id="loaderText">Loading...</div>
+  </div>
+
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo"><i class="fab fa-node-js"></i> Venkata Durga Prasad </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h2>Hi There,<br /> I'm Durga <span>Prasad</span></h2>
+      <p>i am <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn"
+              href="https://www.linkedin.com/in/venkata-durga-prasad-tattukolla-6b1635255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/VenkataDurgaPrasadX" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com" target="_blank"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    </div>
+  </section>
+  <!-- hero section ends -->
+
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+    <div class="row">
+      <div class="image">
+        <img draggable="false" class="tilt"
+          src="C:\Users\91756\OneDrive\Desktop\LPU\Projects\Portfolio-Website\Portfolio-Website-@Prasad\assets\images\mypic.jpg"
+          alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Venkata Durga Prasad</h3>
+        <span class="tag">Front-End Developer</span>
+        <p>
+          I am a Computer Science student from Vijayawada, India, currently pursuing my Bachelor of Technology in
+          Computer Science Engineering from Lovely Professional University, Punjab. I am passionate about improving my
+          design and coding skills, focusing on developing user-friendly applications and websites. I specialize in
+          UI/UX design, creating intuitive and engaging interfaces for WebApps and Websites. I am continuously working
+          on projects to refine my skills, with the goal of becoming a proficient designer who builds seamless,
+          user-centered experiences.
+        </p>
+
+        <div class="box-container">
+          <div class="box">
+            <p><span> age: </span> 20</p>
+            <p><span> phone : </span> +91 7569718529</p>
+          </div>
+          <div class="box">
+            <p><span> email : </span> tattukollaprasad@gmail.com</p>
+            <p><span> place : </span> Andhra Pradesh, India - 521226</p>
+          </div>
+        </div>
+        <div class="resumebtn">
+          <a href="C:\Users\91756\OneDrive\Desktop\LPU\Academics\Placement_Preparation\Resume\Specialized CV for Full Stack1.pdf"
+            target="_blank" class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <div class="container">
+      <div class="row" id="skillsContainer">
+        <!-- Programming Languages -->
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" />
+            <span>Java</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" />
+            <span>C</span>
+          </div>
+        </div>
+        <!-- Other Technical Skills -->
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/database.png" alt="Data Structures" />
+            <span>Data Structures</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Algorithms" />
+            <span>Algorithms</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" alt="UI/UX Design" />
+            <span>UI/UX Design</span>
+          </div>
+        </div>
+        <!-- Web Technologies -->
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" />
+            <span>HTML</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />
+            <span>CSS</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/communication.png" alt="Communication" />
+            <span>Communication</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/teamwork.png" alt="Team Work" />
+            <span>Team Work</span>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/figma.png" alt="Figma" />
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skills section ends -->
+
+  <!-- education section starts -->
+  <section class="education" id="education">
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelor of Engineering in Computer Science</h3>
+          <p>Lovely Professional University | Punjab</p>
+          <h4>2022-2026 | Present</h4>
+          <div class="cgpa">
+            <p>CGPA: <span>6.53</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Secondary Education</h3>
+          <p>Sri Srinivasa Junior College | Andhra Pradesh</p>
+          <h4>2020-2022 | Completed</h4>
+          <div class="cgpa">
+            <p>CGPA: <span>7.1</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 71%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/ZPHS.jpg" alt="">
+        </div>
+        <div class="content">
+          <h3>Primary Education</h3>
+          <p>Zilla Parishad High School | Andhra Pradesh</p>
+          <h4>20019-2020 | Completed</h4>
+          <div class="cgpa">
+            <p>CGPA: <span>9.6</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 96%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- education section ends -->
+
+  <!-- Inline CSS for CGPA progress bars -->
+  <style>
+    .cgpa {
+      margin-top: 10px;
+    }
+
+    .cgpa p {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 10px;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .progress {
+      background-color: #4caf50;
+      height: 100%;
+      width: 0;
+      transition: width 0.4s ease;
+    }
+
+    .progress-bar .progress {
+      width: 0;
+      transition: width 0.3s ease;
+    }
+
+    .box:hover .progress {
+      width: 100%;
+    }
+  </style>
+
+  <!-- projects section starts -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+      <div class="projects-grid" id="project-list"></div>
+    </div>
+  </section>
+  <!-- projects section ends -->
+
+  <!-- Certifications & Courses section starts -->
+  <section id="certificates" class="certificates-section">
+    <div class="container">
+      <h2 class="heading"><i class="fas fa-certificate"></i> Certifications & <span>Courses</span></h2>
+      <div class="certificates-grid" id="certificate-list" role="region" aria-label="Certifications grid">
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-java.png" alt="Programming Using Java Certificate" class="certificate-img"
+              loading="lazy">
+            <span class="certificate-date">Aug 2024</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Programming Using Java</h3>
+            <p class="certificate-platform">Cipher Schools · August 2024</p>
+            <p class="certificate-duration">Duration: Approximately 20 hours</p>
+            <p class="certificate-description">Mastered Java programming fundamentals and application development.</p>
+            <div class="certificate-links">
+              <a href="https://www.cipherschools.com/certificate/preview?id=66ef39e6ce4f63a842e479d8" target="_blank"
+                aria-label="View Programming Using Java certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-dynamic.png" alt="Dynamic Programming, Greedy Algorithms Certificate"
+              class="certificate-img" loading="lazy">
+            <span class="certificate-date">Apr 2024</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Dynamic Programming, Greedy Algorithms</h3>
+            <p class="certificate-platform">Coursera · April 2024</p>
+            <p class="certificate-duration">Duration: Approximately 15 hours</p>
+            <p class="certificate-description">Learned advanced algorithmic techniques, including dynamic programming
+              and greedy algorithms.</p>
+            <div class="certificate-links">
+              <a href="https://www.coursera.org/account/accomplishments/verify/XNGF74GWNSVN" target="_blank"
+                aria-label="View Dynamic Programming, Greedy Algorithms certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-genai.png" alt="Generative AI with Large Language Models Certificate"
+              class="certificate-img" loading="lazy">
+            <span class="certificate-date">Apr 2024</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Generative AI with Large Language Models</h3>
+            <p class="certificate-platform">Coursera · April 2024</p>
+            <p class="certificate-duration">Duration: 16 hours</p>
+            <p class="certificate-description">Explored generative AI and large language models, achieving a grade of
+              89.65%.</p>
+            <div class="certificate-links">
+              <a href="https://www.coursera.org/account/accomplishments/verify/8SSQHD7VVFZF" target="_blank"
+                aria-label="View Generative AI with Large Language Models certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-frontend.png" alt="Explore a Career in Front-End Web Development Certificate"
+              class="certificate-img" loading="lazy">
+            <span class="certificate-date">Feb 2023</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Explore a Career in Front-End Web Development</h3>
+            <p class="certificate-platform">LinkedIn Learning · February 2023</p>
+            <p class="certificate-duration">Duration: Approximately 10 hours</p>
+            <p class="certificate-description">Explored front-end development techniques and best practices.</p>
+            <div class="certificate-links">
+              <a href="https://www.linkedin.com/learning/certificate/frontend-2023" target="_blank"
+                aria-label="View Explore a Career in Front-End Web Development certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-fullstack.png" alt="Become a Full Stack Web Developer Certificate"
+              class="certificate-img" loading="lazy">
+            <span class="certificate-date">Jan 2023</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">Become a Full Stack Web Developer</h3>
+            <p class="certificate-platform">LinkedIn Learning · January 2023</p>
+            <p class="certificate-duration">Duration: Approximately 30 hours</p>
+            <p class="certificate-description">Learned full-stack development, including front-end and back-end
+              technologies.</p>
+            <div class="certificate-links">
+              <a href="https://www.linkedin.com/learning/certificate/fullstack-2023" target="_blank"
+                aria-label="View Become a Full Stack Web Developer certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="certificate-card">
+          <div class="certificate-img-wrapper">
+            <img src="./assets/images/cert-c.png" alt="C for Everyone Certificate" class="certificate-img"
+              loading="lazy">
+            <span class="certificate-date">Apr 2022</span>
+          </div>
+          <div class="certificate-content">
+            <h3 class="certificate-title">C for Everyone</h3>
+            <p class="certificate-platform">Coursera · April 2022</p>
+            <p class="certificate-duration">Duration: Approximately 20 hours</p>
+            <p class="certificate-description">Gained proficiency in C programming for software development.</p>
+            <div class="certificate-links">
+              <a href="https://www.coursera.org/account/accomplishments/verify/W93JWGYV8WK2" target="_blank"
+                aria-label="View C for Everyone certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Certifications & Courses section ends -->
+
+
+
+  <!-- Research Publications & Patents section starts -->
+  <section class="research-publications" id="research">
+    <div class="container">
+      <h2 class="heading"><i class="fas fa-book"></i> Research Publications & <span>Patents</span></h2>
+      <p class="section-quote">Research fuels innovation, transforming ideas into impact.</p>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search papers or patents..." oninput="searchPapers()"
+          aria-label="Search research papers and patents">
+      </div>
+      <div class="filter-chips">
+        <button class="chip active" data-filter="all">✨ All</button>
+        <button class="chip" data-filter="ML">🤖 ML</button>
+        <button class="chip" data-filter="NLP">🗣️ NLP</button>
+        <button class="chip" data-filter="Patent">📜 Patent</button>
+        <button class="chip" data-filter="IoT">🌐 IoT</button>
+        <button class="chip" data-filter="Cloud">☁️ Cloud</button>
+        <button class="chip" data-filter="Research">📖 Research</button>
+      </div>
+      <div class="research-grid" id="researchGrid" role="region" aria-label="Research publications and patents grid">
+        <div class="research-card fade-in" data-tags="ML NLP Research">
+          <div class="research-img-wrapper">
+            <img src="./assets/images/nlp-autocomplete.jpg" alt="Autocomplete and Spellchecking Research"
+              class="research-img" loading="lazy">
+            <span class="research-date">Jun 2024</span>
+          </div>
+          <div class="research-content">
+            <span class="type-tag paper">Research Paper</span>
+            <h3 class="research-title">Empowering Autocomplete and Spellchecking Through Unified Markov and N-gram</h3>
+            <p class="research-description">Developed a unified model combining Markov chains and N-grams for efficient
+              autocomplete and spellchecking.</p>
+            <div class="research-links">
+              <a href="./assets/papers/nlp-autocomplete.pdf" target="_blank"
+                aria-label="View Autocomplete and Spellchecking paper"><i class="fa-regular fa-eye"></i> View Paper</a>
+            </div>
+          </div>
+        </div>
+        <div class="research-card fade-in" data-tags="ML Research">
+          <div class="research-img-wrapper">
+            <img src="./assets/images/music-playlist.jpg" alt="Music Playlist Generator Research" class="research-img"
+              loading="lazy">
+            <span class="research-date">Mar 2024</span>
+          </div>
+          <div class="research-content">
+            <span class="type-tag paper">Research Paper</span>
+            <h3 class="research-title">Music Playlist Generator Using Collaborative Filtering</h3>
+            <p class="research-description">Designed a smart music recommendation system using collaborative filtering
+              techniques.</p>
+            <div class="research-links">
+              <a href="./assets/papers/music-playlist.pdf" target="_blank"
+                aria-label="View Music Playlist Generator paper"><i class="fa-regular fa-eye"></i> View Paper</a>
+            </div>
+          </div>
+        </div>
+        <div class="research-card fade-in" data-tags="Patent IoT">
+          <div class="research-img-wrapper">
+            <img src="./assets/images/self-watering-planter.jpg" alt="Self-Watering Planter Patent" class="research-img"
+              loading="lazy">
+            <span class="research-date">Mar 2025</span>
+          </div>
+          <div class="research-content">
+            <span class="type-tag patent">Patent</span>
+            <h3 class="research-title">Self-Watering Planter for Indoor Gardens</h3>
+            <p class="research-description">Invented a smart planter with automated watering for indoor plant care.</p>
+            <div class="research-links">
+              <span class="status pending">🟠 Under Review</span>
+            </div>
+          </div>
+        </div>
+        <div class="research-card fade-in" data-tags="ML Research">
+          <div class="research-img-wrapper">
+            <img src="./assets/images/digit-recognition.jpg" alt="Handwritten Digit Recognition Research"
+              class="research-img" loading="lazy">
+            <span class="research-date">Jun 2023</span>
+          </div>
+          <div class="research-content">
+            <span class="type-tag paper">Research Paper</span>
+            <h3 class="research-title">Handwritten Digit Recognition Using TensorFlow</h3>
+            <p class="research-description">Explored machine and deep learning models for accurate digit classification.
+            </p>
+            <div class="research-links">
+              <a href="./assets/papers/digit-recognition.pdf" target="_blank"
+                aria-label="View Handwritten Digit Recognition paper"><i class="fa-regular fa-eye"></i> View Paper</a>
+            </div>
+          </div>
+        </div>
+        <div class="research-card fade-in" data-tags="ML Research">
+          <div class="research-img-wrapper">
+            <img src="./assets/images/knapsack-problem.jpg" alt="Knapsack Problem Research" class="research-img"
+              loading="lazy">
+            <span class="research-date">Mar 2023</span>
+          </div>
+          <div class="research-content">
+            <span class="type-tag paper">Research Paper</span>
+            <h3 class="research-title">Solving 0-1 Knapsack Problem Using Genetic Algorithms</h3>
+            <p class="research-description">Applied evolutionary algorithms to optimize solutions for the knapsack
+              problem.</p>
+            <div class="research-links">
+              <a href="./assets/papers/knapsack-problem.pdf" target="_blank" aria-label="View Knapsack Problem paper"><i
+                  class="fa-regular fa-eye"></i> View Paper</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="no-results">
+        <img src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png" alt="Not Found" class="no-result-img">
+        <h2>Oops! Nothing Found</h2>
+        <p>Couldn’t find matching papers or patents. Try a different keyword!</p>
+      </div>
+    </div>
+  </section>
+  <!-- Research Publications & Patents section ends -->
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+    <div class="timeline">
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>Summer Intern – Java Development</h2>
+          </div>
+          <div class="desc">
+            <h3>Cipher Schools</h3>
+            <p>May 2023 - July 2023</p>
+            <ul>
+              <li>Learned core Java concepts including OOP, File Handling, and Multi-threading.</li>
+              <li>Developed a basic Binary Search Tree with key operations.</li>
+              <li>Explored Java Collections like ArrayList, HashMap, and LinkedList.</li>
+              <li>Received Certificate of Completion for successful internship.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Academic Projects</h2>
+          </div>
+          <div class="desc">
+            <h3>Self-Initiated Work</h3>
+            <p>2023 - Present</p>
+            <ul>
+              <li>Created a portfolio website to showcase skills and achievements.</li>
+              <li>Designed and developed a restaurant food ordering website named "Little India".</li>
+              <li>Working on a concept for a women’s safety emergency alert mobile app.</li>
+              <li>Built a donation website for medical support using simple HTML/CSS/JS.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>UI/UX Design Practice</h2>
+          </div>
+          <div class="desc">
+            <h3>Personal Interest</h3>
+            <p>2023 - Present</p>
+            <ul>
+              <li>Designed modern and user-friendly web and app interfaces using Figma.</li>
+              <li>Practiced building responsive and accessible layouts for real users.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Kabaddi Athlete</h2>
+          </div>
+          <div class="desc">
+            <h3>University, District & State Levels</h3>
+            <p>2021 - Present</p>
+            <ul>
+              <li>Represented the university in multiple kabaddi tournaments.</li>
+              <li>Played at district, state, and central zone levels.</li>
+              <li>Built strong teamwork, discipline, and leadership qualities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="morebtn">
+      <a href="experience/index.html" class="btn">
+        <span>View All</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+  <!-- experience section ends -->
+
+
+  <!-- Achievements & Awards section starts -->
+  <section class="achievements-awards" id="achievements">
+    <div class="container">
+      <h2 class="heading"><i class="fas fa-medal"></i> Achievements & <span>Awards</span></h2>
+      <p class="section-quote">Achievements mark the milestones of relentless pursuit.</p>
+      <div class="achievements-carousel-container">
+        <div class="achievements-carousel" id="achievementsCarousel">
+          <div class="achievement-card fade-in">
+            <div class="achievement-img-wrapper">
+              <img src="./assets/images/inter-school-sport.jpg" alt="Inter School Sport League Award"
+                class="achievement-img" loading="lazy">
+              <span class="achievement-date">Apr 2025</span>
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">Inter School Sport League</h3>
+              <p class="achievement-description">Secured 1st Runner-Up in inter-school kabaddi competition.</p>
+              <div class="achievement-links">
+                <span class="status runner-up">🥈 1st Runner-Up</span>
+              </div>
+            </div>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-img-wrapper">
+              <img src="./assets/images/raiders-rumble.jpg" alt="RaidersRumble Tournament Award" class="achievement-img"
+                loading="lazy">
+              <span class="achievement-date">Mar 2025</span>
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">RaidersRumble Kabaddi Tournament</h3>
+              <p class="achievement-description">Secured 1st Runner-Up, winning ₹11,000 in a regional kabaddi
+                tournament.</p>
+              <div class="achievement-links">
+                <span class="status runner-up">🥈 1st Runner-Up</span>
+              </div>
+            </div>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-img-wrapper">
+              <img src="./assets/images/kho-kho.jpg" alt="Inter Hostel Kho-Kho Award" class="achievement-img"
+                loading="lazy">
+              <span class="achievement-date">Feb 2025</span>
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">Inter Hostel Kho-Kho Tournament</h3>
+              <p class="achievement-description">Led team to victory in university inter-hostel kho-kho tournament.</p>
+              <div class="achievement-links">
+                <span class="status">🥇 Winner</span>
+              </div>
+            </div>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-img-wrapper">
+              <img src="./assets/images/data-interpretation.jpg" alt="Data Interpretation Competition Award"
+                class="achievement-img" loading="lazy">
+              <span class="achievement-date">Nov 2024</span>
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">Data Interpretation Competition</h3>
+              <p class="achievement-description">Secured 1st place in a national-level data interpretation competition
+                hosted by HackerRank.</p>
+              <div class="achievement-links">
+                <a href="./assets/certificates/data-interpretation-certificate.pdf" target="_blank"
+                  aria-label="View Data Interpretation certificate"><i class="fa-regular fa-eye"></i> View
+                  Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="achievement-card fade-in">
+            <div class="achievement-img-wrapper">
+              <img src="./assets/images/sports-ustav.jpg" alt="Sports Ustav 2.0 Award" class="achievement-img"
+                loading="lazy">
+              <span class="achievement-date">Mar 2023</span>
+            </div>
+            <div class="achievement-content">
+              <h3 class="achievement-title">Sports Ustav 2.0</h3>
+              <p class="achievement-description">Won the Sports Ustav 2.0 inter-university kabaddi competition.</p>
+              <div class="achievement-links">
+                <span class="status">🥇 Winner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+  <!-- Achievements & Awards section ends -->
+
+  <!-- contact section starts -->
+  <section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+        <form id="contact-form">
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
+          </div>
+          <div class="button-area">
+            <button type="submit">
+              Submit <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+  <!-- footer section starts -->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Venkata Durga Prasad's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
+          🚀. Connect with me</p>
+      </div>
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+        <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+        <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+        <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
+        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i>+91 7569718529</p>
+        <p> <i class="fas fa-envelope"></i>tattukollaprasad@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>AP, India-521226</p>
+        <div class="share">
+          <a href="https://www.linkedin.com/in/venkata-durga-prasad" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/VenkataDurgaPrasadX" class="fab fa-github" aria-label="GitHub"
+            target="_blank"></a>
+          <a href="mailto:tattukollaprasad@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+          <a href="https://twitter.com/Prasad" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/venkata-durga-prasad"> Venkata Durga Prasad</a></h1>
+  </section>
+  <!-- footer section ends -->
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+  <!-- JavaScript CDNs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
